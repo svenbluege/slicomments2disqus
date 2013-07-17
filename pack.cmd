@@ -8,5 +8,5 @@ set version=%version:</version>=%
 set version=%version:.=_%
 set zipfilename=com_slicommentstodisqus_%version%.zip
 
-del %zipfilename%
+del ../%zipfilename%
 zip -r ../%zipfilename% * -i "site/*" "slicommentstodisqus.xml" "index.html" "LICENSE"
