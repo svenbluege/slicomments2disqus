@@ -10,11 +10,6 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-if (!JFactory::getUser()->authorise('core.manage', 'com_slicommentstodisqus'))
-{
-	return JError::raiseWarning(404, JText::_('JERROR_ALERTNOAUTHOR'));
-}
-
 //load tables
 JTable::addIncludePath(
     JPATH_COMPONENT . DIRECTORY_SEPARATOR . 'tables'
